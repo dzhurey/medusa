@@ -128,6 +128,9 @@ class Product {
   @Property({ columnType: "text", nullable: true })
   material?: string | null
 
+  @Property({ columnType: "text", nullable: true })
+  brand_id?: string | null
+
   @Searchable()
   @ManyToOne(() => ProductCollection, {
     columnType: "text",

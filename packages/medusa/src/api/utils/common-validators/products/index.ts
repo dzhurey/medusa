@@ -12,6 +12,7 @@ export const GetProductsParams = z.object({
   handle: z.string().nullish(),
   is_giftcard: OptionalBooleanValidator,
   category_id: z.string().array().nullish(),
+  brand_id: z.string().array().nullish(),
   sales_channel_id: z.string().array().nullish(),
   collection_id: z.string().array().nullish(),
   tags: z.string().array().optional(),
